@@ -13,6 +13,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightseagreen;
         }
 
         td, th{
@@ -25,6 +33,19 @@
             color: rgb(6, 6, 6);
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: aquamarine;
+        }
+
+        tbody > tr:nth-child(even){/* 2n */
+            background-color: lightgrey;
+        }
+        tbody > tr:nth-child(odd){/* 2n-1 */
+            background-color: white;
+        }
+
         td.num{
             text-align: right;
         }
@@ -35,18 +56,20 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
-            THAD
-                TR, TD, TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH
+            CAPTION
+                THAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,10 +185,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni quos amet mollitia, voluptatibus doloribus eius nam totam ab facere minima temporibus recusandae nostrum hic repudiandae libero qui! Laboriosam, ab!</p>
 </body>
 </html>
