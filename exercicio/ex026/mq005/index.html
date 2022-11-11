@@ -13,9 +13,9 @@
 <body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <i id="burguer" class="material-icons" onmouseenter="entraMenu()" onmouseout="saiMenu()">menu</i>
         <menu id="itens">
-            <ul>
+            <ul onmouseout="saiMenu()">
                 <li><a href="#">Opçaõ 1</a></li>
                 <li><a href="#">Opção 2</a></li>
                 <li><a href="#">Opção 3</a></li>
@@ -35,15 +35,23 @@
     </main>
     <script>
 
-        function mudouTamanho(){
-            if(window.innerWidth >= 768){
-                itens.style.display = 'block'
-            } else{
+       // function mudouTamanho(){
+        //    if(window.innerWidth >= 768){
+        //        itens.style.display = 'block'
+        //    } else{
+        //        itens.style.display = 'none'
+        //    }
+        //}
+
+        function entraMenu(){
+            if (itens.style.display == 'block') {
                 itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
             }
         }
 
-        function clickMenu(){
+        function saiMenu(){
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
             } else{
